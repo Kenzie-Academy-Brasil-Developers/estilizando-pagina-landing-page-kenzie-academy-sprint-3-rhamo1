@@ -60,6 +60,9 @@ div.large-container{
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 div.container{
     width: 100%;
@@ -73,11 +76,22 @@ html{}
 /* HTML */
   
 /* BODY */
-body{}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Lato';
+}
+h2 {
+    font-family: "Montserrat";
+}
 /* BODY */
   
 /* HEADER */
-header{}
+header{
+    display: flex;
+    background-color: var(--cor-azulescuro);
+}
 /* HEADER */
   
 /* FOOTER */
@@ -107,3 +121,30 @@ main{}
   
     @media screen and (min-width: 800px) {}
 /* MEDIA QUERIES */
+
+.topo li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+header figure {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    margin: 10px 0;
+}
+
+header figcaption {
+    opacity: 0;
+}
+
+.topo__nav ul {
+    letter-spacing: 3px;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
