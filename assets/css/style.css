@@ -87,40 +87,11 @@ h2 {
 }
 /* BODY */
   
-/* HEADER */
+/* HEADER J */
 header{
     display: flex;
     background-color: var(--cor-azulescuro);
 }
-/* HEADER */
-  
-/* FOOTER */
-footer{}
-/* FOOTER */
-
-/* INICIAL */
-main{}
-/* INICIAL */
-
-/* EXTRAS */
-
-/* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
-
-/* EXTRAS */
-  
-
-/* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
-/* MEDIA QUERIES */
 
 .topo li a {
     text-decoration: none;
@@ -147,4 +118,100 @@ header figcaption {
     align-content: space-around;
     flex-wrap: wrap;
 }
+/* HEADER J */
+  
+/* FOOTER R */
+footer{}
+/* FOOTER R */
+
+/* INICIAL */
+main{
+
+}
+
+/* PÁGINA DE DESTAQUE R */
+
+.secaoDestaque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../assets/img/background-destaque.webp);
+    background-color: #FFFFFF;
+    /* width: 100%; */
+    text-align: center;
+    padding: 150px;
+}
+
+.secaoDestaque h2 {
+    font-size: 63px;
+    color: var(--cor-branco);
+    font-family: 'Montserrat';
+}
+
+.secaoDestaque p {
+    font-size: 21px;
+    color: var(--cor-branco);
+    padding: 20px;
+}
+
+.secaoDestaqueFormulario {
+    display: flex;
+}
+
+.secaoDestaqueFormulario input {
+    border: 5px var(--cor-cinzaclaro);
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.button__subscribe {
+    background-color: var(--cor-azulclaro);
+    border: 0;
+    color: var(--cor-branco);
+    border-radius: 10%;
+}
+.button {
+    font-size: 14px;
+}
+
+
+
+/* PÁGINA DE DESTAQUE R */
+
+/* <!-- COLUNAS J --> */
+
+/* <!-- COLUNAS J --> */
+
+/* <!-- SEÇÃO CURSOS R --> */
+
+/* <!-- SEÇÃO CURSOS R --> */
+
+/* <!-- LISTA CALENDÁRIO J --> */
+
+/* <!-- LISTA CALENDÁRIO J --> */
+
+/* INICIAL */
+
+/* EXTRAS */
+
+/* para estilizar a scrollbar */
+::-webkit-scrollbar{}
+::-webkit-scrollbar-button{}
+::-webkit-scrollbar-track{}
+::-webkit-scrollbar-track-piece{}
+::-webkit-scrollbar-thumb{}
+::-webkit-scrollbar-corner{}
+::-webkit-resizer{}
+
+/* EXTRAS */
+  
+
+/* MEDIA QUERIES */
+    @media screen and (min-width: 400px) {}
+  
+    @media screen and (min-width: 800px) {}
+/* MEDIA QUERIES */
+
+
 
