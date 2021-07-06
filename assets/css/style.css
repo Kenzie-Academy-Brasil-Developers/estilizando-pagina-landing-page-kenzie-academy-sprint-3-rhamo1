@@ -87,40 +87,11 @@ h2 {
 }
 /* BODY */
   
-/* HEADER */
+/* HEADER J */
 header{
     display: flex;
     background-color: var(--cor-azulescuro);
 }
-/* HEADER */
-  
-/* FOOTER */
-footer{}
-/* FOOTER */
-
-/* INICIAL */
-main{}
-/* INICIAL */
-
-/* EXTRAS */
-
-/* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
-
-/* EXTRAS */
-  
-
-/* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
-/* MEDIA QUERIES */
 
 .topo li a {
     text-decoration: none;
@@ -147,4 +118,50 @@ header figcaption {
     align-content: space-around;
     flex-wrap: wrap;
 }
+/* HEADER J */
+  
+/* FOOTER R */
+footer{}
+/* FOOTER R */
+
+/* INICIAL */
+main{
+
+}
+
+/* <!-- COLUNAS J --> */
+
+/* <!-- COLUNAS J --> */
+
+/* <!-- SEÇÃO CURSOS R --> */
+
+/* <!-- SEÇÃO CURSOS R --> */
+
+/* <!-- LISTA CALENDÁRIO J --> */
+
+/* <!-- LISTA CALENDÁRIO J --> */
+
+/* INICIAL */
+
+/* EXTRAS */
+
+/* para estilizar a scrollbar */
+::-webkit-scrollbar{}
+::-webkit-scrollbar-button{}
+::-webkit-scrollbar-track{}
+::-webkit-scrollbar-track-piece{}
+::-webkit-scrollbar-thumb{}
+::-webkit-scrollbar-corner{}
+::-webkit-resizer{}
+
+/* EXTRAS */
+  
+
+/* MEDIA QUERIES */
+    @media screen and (min-width: 400px) {}
+  
+    @media screen and (min-width: 800px) {}
+/* MEDIA QUERIES */
+
+
 
