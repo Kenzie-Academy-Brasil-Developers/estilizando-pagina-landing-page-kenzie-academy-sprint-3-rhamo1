@@ -10,7 +10,7 @@
 </head>
 <body>
   
-  <!-- CABEÇALHO Gabriel -->
+  <!-- CABEÇALHO João -->
   <header class="topo">
 
     <div class="large-container">
@@ -23,7 +23,7 @@
  <!-- MENU DE NAVEGAÇÃO -->
       <nav class="topo__nav">
       
-      <nav>
+      <nav id="topo__nav--itens">
 
         <ul>
           <li><a href="#1">Sobre a Kenzie</a></li>
@@ -113,48 +113,48 @@
   <!-- SEÇÃO CURSOS -->
   <section class="secaoCursos">
 
-    <article>
+    <article id="articleCursos">
 
-      <h2>COURSES</h2>
+      <h2 style="margin-top: 20px;">COURSES</h2>
       <p>What we offer</p>
 
       <!-- LISTA DE CURSOS -->
-      <ul>
+      <ul class="secaoCursos secaoCursos__ul">
       
-        <li>
+        <li class="secaoCursos secaoCursos__li">
           <img src="assets/img/html-css.png" alt="">
-          <h3>Html/Css</h3>
-          <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <h3 class="secaoCursos__li--h3">Html/Css</h3>
+          <p class="secaoCursos__li--p">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
         </li>
 
-        <li>
+        <li class="secaoCursos secaoCursos__li">
           <img src="assets/img/js.png" alt="">
-          <h3>JavaScript</h3>
-          <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <h3 class="secaoCursos__li--h3">JavaScript</h3>
+          <p class="secaoCursos__li--p">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
         </li>
 
-        <li>
+        <li class="secaoCursos secaoCursos__li">
           <img src="assets/img/react.png" alt="">
-          <h3>React</h3>
-          <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <h3 class="secaoCursos__li--h3">React</h3>
+          <p class="secaoCursos__li--p">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
         </li>
 
-        <li>
+        <li class="secaoCursos secaoCursos__li">
           <img src="assets/img/py.webp" alt="">
-          <h3>Python</h3>
-          <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <h3 class="secaoCursos__li--h3">Python</h3>
+          <p class="secaoCursos__li--p">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
         </li>
 
-        <li>
+        <li class="secaoCursos secaoCursos__li">
           <img src="assets/img/dj.png" alt="">
-          <h3>Django</h3>
-          <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <h3 class="secaoCursos__li--h3">Django</h3>
+          <p class="secaoCursos__li--p">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
         </li>
 
-        <li>
+        <li class="secaoCursos secaoCursos__li">
           <img src="assets/img/multitasking.svg" alt="">
-          <h3 style="color:#303030;">Soft Skills</h3>
-          <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <h3 class="secaoCursos__li--h3">Soft Skills</h3>
+          <p class="secaoCursos__li--p">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
         </li>
         
       </ul>
@@ -210,6 +210,9 @@
     <div class="flex">
 
       <!-- COLUNA LADO ESQUERDO -->
+
+      <h2>Contact</h2>
+
       <div class="flex-col">
         
         <div class="secaoContato-informacoes">
@@ -217,9 +220,18 @@
           <p>Contact us and we'll get back to you within 24 hours.</p>
           
           <ul>
-            <li><a href="#">Chicago, US</a> </li>
-            <li><a href="tel:001515151515">+00 1515151515</a></li>
-            <li><a href="malito:myemail@something.com">myemail@something.com</a></li>
+            <li>
+              <figure><img src="./assets/img/location.png" alt="location"></figure>
+              <a href="#">Chicago, US</a> 
+            </li>
+            <li>
+              <figure><img src="./assets/img/phone.png" alt="phone"></figure>
+              <a href="tel:001515151515">+00 1515151515</a>
+            </li>
+            <li>
+              <figure><img src="./assets/img/mail.png" alt="mail"></figure>
+              <a href="malito:myemail@something.com">myemail@something.com</a>
+            </li>
           </ul>
 
         </div>
@@ -227,9 +239,12 @@
       </div>
 
       <!-- COLUNA LADO DIRETO -->
+
+      
+      
       <div class="flex-col">
         
-        <h2>Contact</h2>
+        
         
         <form action="">
 
@@ -244,11 +259,11 @@
           </div>
 
           <div class="form-input-model">
-            <label for="mensagem">E-mail</label>
-            <textarea name="mensagem" id="mensagem"></textarea>
+            <label for="mensagem">Comment</label>
+            <textarea name="mensagem" placeholder="Comment" id="mensagem"></textarea>
           </div>
 
-          <input type="submit" value="Send">
+          <input type="submit" class="form-input-model__button" id="send" value="Send">
 
         </form>
 
@@ -261,7 +276,10 @@
 </main>
 
 <footer>
+
   <p>Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
+
+  
 </footer>
 
   <script src="assets/js/script.js"></script>
