@@ -181,6 +181,28 @@ main{
 
 /* <!-- COLUNAS J --> */
 
+.secaoSobre {
+    font-size: 19px;
+}
+
+.secaoSobre h1, h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.flex-col__python {
+    width: 40%;
+    height: 40%;
+}
+
+.flex-col__js {
+    width: 15%;
+    height: 15%;
+}
+
+.secaoSobre figcaption {
+    opacity: 0;
+}
 /* <!-- COLUNAS J --> */
 
 /* <!-- SEÇÃO CURSOS R --> */
