@@ -45,6 +45,12 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: sans-serif;
     list-style: none;
 }
+
+a{
+    text-decoration: none;
+    text-decoration-color: var(--cor-cinza);
+}
+
 img{
     max-width: 800px;
 }
@@ -118,10 +124,29 @@ header figcaption {
     align-content: space-around;
     flex-wrap: wrap;
 }
+
+.topo__nav{
+    display: flex;
+    justify-content: center;
+}
+
+#topo__nav--itens{
+    display: flex;
+    justify-content: center;
+}
+
 /* HEADER J */
   
 /* FOOTER R */
-footer{}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-branco);
+    padding-top: 1rem;
+    
+}
+
 /* FOOTER R */
 
 /* INICIAL */
@@ -146,6 +171,7 @@ main{
     font-size: 63px;
     color: var(--cor-branco);
     font-family: 'Montserrat';
+    font-weight: 400;
 }
 
 .secaoDestaque p {
@@ -160,9 +186,9 @@ main{
 
 .secaoDestaqueFormulario input {
     border: 5px var(--cor-cinzaclaro);
-    border-radius: 6px;
-    overflow: hidden;
-    padding: 8px;
+    padding: 8px;    
+    border-radius: 8px 0px 0px 8px;
+   
 }
 
 .button__subscribe {
@@ -173,9 +199,8 @@ main{
 }
 .button {
     font-size: 14px;
+    border-radius: 0px 8px 8px 0px;
 }
-
-
 
 /* PÁGINA DE DESTAQUE R */
 
@@ -185,11 +210,207 @@ main{
 
 /* <!-- SEÇÃO CURSOS R --> */
 
+#articleCursos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin: auto;
+    max-width: 80%;
+
+
+}
+
+.secaoCursos{
+    display: flex;
+    flex-direction: column;
+    color:  var(--cor-cinza);
+
+}
+
+
+.secaoCursos img{
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+
+}
+
+.secaoCursos__ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color:  var(--cor-cinza);
+    align-items: center;
+
+}
+
+.secaoCursos__li{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.49rem;
+
+}
+
+.secaoCursos__li--h3{
+    color: var(--cor-cinza);
+    padding: 2rem;
+
+
+}
+
+.secaoCursos__li--p{
+    color: var(--cor-cinza);
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.secaoCursos img {
+    width: 13vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 /* <!-- SEÇÃO CURSOS R --> */
 
 /* <!-- LISTA CALENDÁRIO J --> */
 
 /* <!-- LISTA CALENDÁRIO J --> */
+
+/* <!-- CONTATO R --> */
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+    padding-top: 30px;
+    align-content: center;
+    align-items: flex-start;
+
+}
+
+.flex-col form{
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 110%;
+    padding-top: 30px;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.flex-col label{
+    visibility: hidden;
+}
+
+.flex-col h2{
+    text-transform: uppercase;
+}
+
+.flex-col #nome #email{
+    padding: 5px;
+    width: 80%;
+    
+}
+
+#nome, #email{
+    width: 80%;
+    padding: .2rem;
+}
+
+
+.flex-col #mensagem{
+    height: 4rem;
+    width: 80%;
+}
+
+#send{
+    padding: .3rem;
+    margin-top: .9rem;
+}
+
+.secaoContato{
+    background-color: #f6f6f6;
+}
+.secaoContato h2{
+    text-transform: uppercase;
+}
+
+.secaoContato-informacoes{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+
+}
+
+.secaoContato-informacoes ul, li, a {
+    color: inherit;
+    padding-bottom: 1rem;
+}.secaoContato-informacoes li {
+    display: flex;
+}
+
+.secaoContato-informacoes img{
+    width: 24px;
+    padding-right: 15px;
+}
+
+.secaoContato-informacoes a{
+    display: flex;
+}
+
+
+
+.secaoContato-informacoes p{
+    padding-bottom: 2rem;
+}
+
+.form-input-model{
+    padding: 1rem;
+    display: contents;
+
+}
+
+.form-input-model__button{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    margin-left: 68%;
+
+}
+
+div.flex {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+
+/* <!-- CONTATO R --> */
 
 /* INICIAL */
 
@@ -210,7 +431,14 @@ main{
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 1024px) {
+        /* .secaoCursos{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        
+        } */
+    }
 /* MEDIA QUERIES */
 
 
