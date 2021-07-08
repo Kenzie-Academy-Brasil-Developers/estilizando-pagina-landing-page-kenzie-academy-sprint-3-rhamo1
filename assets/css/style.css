@@ -101,7 +101,7 @@ header{
 
 .topo li a {
     text-decoration: none;
-    color: white;
+    color: var(--cor-branco);
     font-size: 13px;
 }
 
@@ -208,23 +208,56 @@ main{
 
 .secaoSobre {
     font-size: 19px;
+    display: flex;
+    flex-direction: row;
 }
 
-.secaoSobre h1, h2 {
-    font-size: 24px;
+.secaoSobre h1, h2 { 
+}
+
+.flex-col {
+}
+.flex-col__titulo {
+    font-size: 19px;
     text-align: center;
+    font-weight: 600
 }
-
-.flex-col__python {
-    width: 40%;
-    height: 40%;
+.flex-col__p {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.flex-col__span {
+    margin-bottom: 50px;
+    color: var(--cor-cinza);
+}
+.flex-col__button {
+    padding: 10px;
+    border: 1px solid var(--cor-cinzaclaro);
+    border-radius: 5px;
+    background-color: var(--cor-branco);
+}
+.flex-col__imagem {
+    max-width: 500px;
 }
 
 .flex-col__js {
-    width: 15%;
-    height: 15%;
+    max-width: 250px;
+    margin-top: 50px;
 }
-
+.flex-coldois__figure {
+}
+.flex-coldois__titulo {
+    font-size: 19px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.flex-coldois__lista li {
+    list-style: disc;
+    color: var(--cor-cinza);
+    margin-top: 30px;
+}
 .secaoSobre figcaption {
     opacity: 0;
 }
@@ -301,6 +334,78 @@ main{
 /* <!-- SEÇÃO CURSOS R --> */
 
 /* <!-- LISTA CALENDÁRIO J --> */
+
+.secaoCalendar {
+}
+.secaoCalendar__titulo{
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.secaoCalendar__p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.secaoCalendar__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.secaoCalendar__lista li {
+    border: 1px solid var(--cor-azulescuro);
+    height: 450px;
+    margin: 10px;
+}
+.secaoCalendar h3 {
+    text-align: center;
+    margin: 18px 0;
+    color: var(--cor-cinza);
+}
+.calendario-data {
+    font-size: 32px;
+    margin: 0 auto;
+    color: var(--cor-branco);
+}
+.secaoCalendar__lista li p {
+    text-align: center;
+    line-height: 25px;
+    padding: 10px;
+    margin: 10px;
+    color: var(--cor-cinzaclaro);
+}
+.calendario__span {
+    display: flex;
+    background-color: var(--cor-azulescuro);
+    height: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+.calendario-data-rodape {
+    border-top: 1px solid var(--cor-cinzaclaro);
+    height: 129px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.calendario-data-rodape span {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--cor-cinzaclaro);
+}
+.calendario-data-rodape button {
+    padding: 10px;
+    color: var(--cor-branco);
+    background-color: var(--cor-azulclaro);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    margin: 0 auto;
+}
+
 
 /* <!-- LISTA CALENDÁRIO J --> */
 
