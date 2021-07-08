@@ -294,23 +294,27 @@ main{
     padding: 1rem;
 }
 
+.flex h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
 .flex-col{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: 80%;
-    padding-top: 30px;
     align-content: center;
     align-items: flex-start;
 
 }
 
 .flex-col form{
-        display: flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: 110%;
-    padding-top: 30px;
     align-content: center;
     align-items: flex-start;
 }
@@ -329,15 +333,19 @@ main{
     
 }
 
-#nome, #email{
+#nome, #email {
     width: 80%;
-    padding: .2rem;
+    padding: 5px;
+    border: 3px;
+    border-radius: 8px 8px 8px 8px; 
 }
 
 
 .flex-col #mensagem{
     height: 4rem;
     width: 80%;
+    border: 3px;
+    border-radius: 8px 8px 8px 8px; 
 }
 
 #send{
@@ -348,9 +356,7 @@ main{
 .secaoContato{
     background-color: #f6f6f6;
 }
-.secaoContato h2{
-    text-transform: uppercase;
-}
+
 
 .secaoContato-informacoes{
     display: flex;
@@ -431,14 +437,53 @@ div.flex {
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
   
-    @media screen and (min-width: 1024px) {
-        /* .secaoCursos{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-        
-        } */
+    @media screen and (min-width: 800px) {
+
+        .secaoCursos article{
+      width: 100%;
     }
+
+    .secaoCursos img{
+      width: 30%;
+    }
+
+    .secaoCursos ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-evenly;
+    }
+
+    .secaoCursos li{
+      width: 30%;
+    }
+
+    .secaoCursos__li--h3{
+        font-size: 19px;
+    }
+
+    .secaoCursos__li--p{
+        font-size: 15px;
+    }
+
+    .secaoContato-informacoes {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    padding: 4rem;
+}
+
+div.flex {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+        
+}
 /* MEDIA QUERIES */
 
 
