@@ -91,6 +91,14 @@ body{
 h2 {
     font-family: "Montserrat";
 }
+.button--hover__branco:hover {
+    cursor: pointer;
+    background-color: var(--cor-azulclaro);
+}
+.button--hover__azul:hover {
+    cursor: pointer;
+    background-color: var(--cor-azulescuro);
+}
 /* BODY */
   
 /* HEADER J */
@@ -197,19 +205,56 @@ main{
     color: var(--cor-branco);
     border-radius: 10%;
 }
+.button__subscribe--azul:hover {
+    background-color: var(--cor-azulescuro);
+    cursor: pointer;
+} 
 .button {
     font-size: 14px;
     border-radius: 0px 8px 8px 0px;
 }
 
+
 /* PÁGINA DE DESTAQUE R */
 
 /* <!-- COLUNAS J --> */
+.secaoSobe__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
 
 .secaoSobre {
     font-size: 19px;
     display: flex;
     flex-direction: row;
+}
+.secaoSobre__python {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.secaoSobre__js {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.secaoSobre__caixa1 {
+    padding: 2rem;
+}
+
+.secaoSobre__caixa2 {
+    background-color: rgba(246,246,246,255);
+    padding: 4rem;
 }
 
 .secaoSobre h1, h2 { 
@@ -217,32 +262,42 @@ main{
 
 .flex-col {
 }
+.secaoSobre__esquerda1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+
+}
 .flex-col__titulo {
     font-size: 19px;
     text-align: center;
-    font-weight: 600
+    font-weight: 600;
+    
 }
 .flex-col__p {
-    margin-bottom: 50px;
-    margin-top: 50px;
+    
 }
 .flex-col__span {
-    margin-bottom: 50px;
-    color: var(--cor-cinza);
+    font-size: 16px;
+    
+    color: var(--cor-cinzaclaro);
 }
 .flex-col__button {
     padding: 10px;
     border: 1px solid var(--cor-cinzaclaro);
     border-radius: 5px;
     background-color: var(--cor-branco);
+    
 }
 .flex-col__imagem {
     max-width: 500px;
 }
 
 .flex-col__js {
-    max-width: 250px;
-    margin-top: 50px;
+    max-width: 200px;
 }
 .flex-coldois__figure {
 }
@@ -250,13 +305,23 @@ main{
     font-size: 19px;
     text-align: center;
     font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    color: var(--cor-cinza);
+    margin-bottom: 2rem;
+}
+.secaoSobre__lista {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+    align-content: center;
+    align-items: flex-start;
 }
 .flex-coldois__lista li {
     list-style: disc;
+    font-size: 12px;
     color: var(--cor-cinza);
-    margin-top: 30px;
+    color: var(--cor-cinzaclaro);
+    padding-bottom: 0.8rem;
 }
 .secaoSobre figcaption {
     opacity: 0;
@@ -365,25 +430,40 @@ main{
     font-weight: 600;
     text-align: center;
     margin-bottom: 25px;
+    color: var(--cor-cinza);
+}
+.flex-col__texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 65vw;
+    padding-top: 30px;
+    align-content: center;
+    align-items: flex-start;
 }
 .secaoCalendar__p{
     text-align: center;
     margin-bottom: 15px;
+    color: var(--cor-cinza);
 }
 .secaoCalendar__lista {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: center;
 }
 .secaoCalendar__lista li {
     border: 1px solid var(--cor-azulescuro);
-    height: 450px;
     margin: 10px;
+    height: 65vh;
+    box-sizing: border-box;
+    width: 25vw;
 }
 .secaoCalendar h3 {
     text-align: center;
     margin: 18px 0;
     color: var(--cor-cinza);
+    font-size: 19px;
 }
 .calendario-data {
     font-size: 32px;
@@ -391,24 +471,28 @@ main{
     color: var(--cor-branco);
 }
 .secaoCalendar__lista li p {
+    font-size: 15px;
     text-align: center;
     line-height: 25px;
     padding: 10px;
     margin: 10px;
     color: var(--cor-cinzaclaro);
 }
-.calendario__span {
+.calendario-data {
     display: flex;
     background-color: var(--cor-azulescuro);
-    height: 100px;
+    height: 3em;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
-    align-content: center;
+    justify-content: center;
+}
+.calendario-data h2 {
+    font-size: 24px;
+    font-weight: 500;
 }
 .calendario-data-rodape {
-    border-top: 1px solid var(--cor-cinzaclaro);
-    height: 129px;
+    border-top: 1px solid #f7f7f7;
+    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -426,8 +510,13 @@ main{
     font-size: 16px;
     border: none;
     border-radius: 5px;
-    width: 90px;
+    width: 8vw;
     margin: 0 auto;
+}
+
+.calendario-data-rodape button:hover {
+    cursor: pointer;
+    background-color: var(--cor-azulescuro);
 }
 
 
