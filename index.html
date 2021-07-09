@@ -121,46 +121,46 @@
 
     <article>
 
-      <h2>COURSES</h2>
-      <p>What we offer</p>
+      <h2 id="secaoCursos__article--h2">COURSES</h2>
+      <p id="secaoCursos__article--p">What we offer</p>
 
       <!-- LISTA DE CURSOS -->
-      <ul>
+      <ul class="secaoCursos__ul">
       
-        <li>
+        <li class="secaoCursos__li">
           <img src="assets/img/html-css.png" alt="">
-          <h3>Html/Css</h3>
-          <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <h3 class="secaoCursos__li--h3">Html/Css</h3>
+          <p class="secaoCursos__li--p">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
         </li>
 
-        <li>
+        <li class="secaoCursos__li">
           <img src="assets/img/js.png" alt="">
-          <h3>JavaScript</h3>
-          <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <h3 class="secaoCursos__li--h3">JavaScript</h3>
+          <p class="secaoCursos__li--p">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
         </li>
 
-        <li>
+        <li class="secaoCursos__li">
           <img src="assets/img/react.png" alt="">
-          <h3>React</h3>
-          <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <h3 class="secaoCursos__li--h3">React</h3>
+          <p class="secaoCursos__li--p">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
         </li>
 
-        <li>
+        <li class="secaoCursos__li">
           <img src="assets/img/py.webp" alt="">
-          <h3>Python</h3>
-          <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <h3 class="secaoCursos__li--h3">Python</h3>
+          <p class="secaoCursos__li--p">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
         </li>
 
-        <li>
+        <li class="secaoCursos__li">
           <img src="assets/img/dj.png" alt="">
-          <h3>Django</h3>
-          <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <h3 class="secaoCursos__li--h3">Django</h3>
+          <p class="secaoCursos__li--p">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
         </li>
 
-        <li>
+        <li class="secaoCursos__li">
           <img src="assets/img/multitasking.svg" alt="">
-          <h3 style="color:#303030;">Soft Skills</h3>
-          <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <h3 class="secaoCursos__li--h3" style="color:#303030;">Soft Skills</h3>
+          <p class="secaoCursos__li--p">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
         </li>
         
       </ul>
@@ -227,19 +227,34 @@
 
   <section class="secaoContato">
 
-    <div class="flex">
+    <div class="secaoContato__div">
+
+      <h2>Contact</h2>
+
+      <!-- SEÇAO CONTATO R -->
 
       <!-- COLUNA LADO ESQUERDO -->
-      <div class="flex-col">
+      <div class="secaoContato__col">
         
         <div class="secaoContato-informacoes">
         
           <p>Contact us and we'll get back to you within 24 hours.</p>
           
           <ul>
-            <li><a href="#">Chicago, US</a> </li>
-            <li><a href="tel:001515151515">+00 1515151515</a></li>
-            <li><a href="malito:myemail@something.com">myemail@something.com</a></li>
+            
+            <li>
+              <img src="./assets/img/location.png" alt="location">
+              <a href="#">Chicago, US</a> 
+            </li>
+            <li>
+              <img src="./assets/img/phone.png" alt="phone">
+              <a href="tel:001515151515">+00 1515151515</a>
+            </li>
+            
+            <li>
+              <img src="./assets/img/mail.png" alt="mail">
+              <a href="malito:myemail@something.com">myemail@something.com</a>
+            </li>
           </ul>
 
         </div>
@@ -247,9 +262,8 @@
       </div>
 
       <!-- COLUNA LADO DIRETO -->
-      <div class="flex-col">
+      <div class="secaoContato__col">
         
-        <h2>Contact</h2>
         
         <form action="">
 
@@ -265,10 +279,13 @@
 
           <div class="form-input-model">
             <label for="mensagem">E-mail</label>
-            <textarea name="mensagem" id="mensagem"></textarea>
+            <textarea name="mensagem" placeholder="Comment" id="mensagem"></textarea>
           </div>
 
+
+          
           <input type="submit" value="Send" class="button--hover__branco">
+
 
         </form>
 
