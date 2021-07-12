@@ -62,6 +62,11 @@ figcaption {
 	visibility: hidden;
 }
 
+label{
+    display: none;
+}
+
+
 a {
 	text-decoration: none;
 	text-decoration-color: var(--cor-cinza);
@@ -159,6 +164,11 @@ header figcaption {
 #topo__nav--itens {
 	display: flex;
 	justify-content: center;
+}
+
+.topo__nav--button:hover{
+    cursor: pointer;    
+    color: #007aff;
 }
 
 /* HEADER J */
@@ -564,6 +574,8 @@ div.secaoSobre div {
 
 /* <!-- CONTATO R --> */
 
+
+
 .secaoContato__div {
 	display: flex;
 	flex-direction: column;
@@ -638,36 +650,36 @@ div.secaoSobre div {
 	background-color: #f6f6f6;
 }
 
-.secaoContato-informacoes {
+.secaoContato__info {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 	align-items: flex-start;
 }
 
-.secaoContato-informacoes ul,
+.secaoContato__info ul,
 li,
 a {
 	color: inherit;
 	padding-bottom: 1rem;
 }
 
-.secaoContato-informacoes li {
+.secaoContato__info li {
 	display: flex;
 	align-items: flex-start;
 }
 
-.secaoContato-informacoes img {
+.secaoContato__info img {
 	width: 24px;
 	padding-right: 15px;
 }
 
-.secaoContato-informacoes a {
+.secaoContato__info a {
 	display: flex;
 }
 
-.secaoContato-informacoes p {
-	padding-bottom: 2rem;
+.secaoContato__info p {
+	padding: 2rem;
 }
 
 .form-input-model {
@@ -695,6 +707,57 @@ a {
 li.secaoCursos__li {
 	flex: 100%;
 }
+
+.secaoContato__form{
+    display: flex;
+}
+
+form.secaoContato__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#nome, #email{
+    width: 100%;
+    padding: 1rem;
+}
+
+.form-input-model__comment textarea{
+    width: 100%;
+    padding: 2rem;
+    border: 3px;
+	border-radius: 8px 8px 8px 8px;
+
+}
+
+.form-input-model2 {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input-model2 input{
+    width: 20%;
+    padding: .4rem;
+    align-self: flex-end;
+    text-align: center;
+    
+}
+
+input.button--hover__branco{
+    border: 3px;
+	border-radius: 8px 8px 8px 8px;
+}
+
+
+
+
+
+
 
 /* <!-- CONTATO R --> */
 
@@ -789,7 +852,7 @@ li.secaoCursos__li {
 	.secaoContato__div {
 		background-color: rgb(243, 243, 243);
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		align-items: center;
 		text-align: center;
 	}
@@ -826,6 +889,48 @@ li.secaoCursos__li {
 	img.flex-col__js {
 		width: 100%;
 	}
+
+    .secaoContato__form{
+        display: flex;
+    }
+    
+    form.secaoContato__form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    #nome, #email{
+        width: calc(50% - 10px);
+    }
+    
+    .form-input-model__comment textarea{
+        width: 100%;
+        padding: 2rem;
+    
+    }
+    
+    .form-input-model2 {
+        gap: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-input-model2 input{
+        width: 20%;
+        padding: .4rem;
+        align-self: flex-end;
+        text-align: center;
+        
+    }
+
+    .secaoContato__pai{
+        display: flex;
+    }
+
 }
 
 @media only screen and (min-width: 960px) {

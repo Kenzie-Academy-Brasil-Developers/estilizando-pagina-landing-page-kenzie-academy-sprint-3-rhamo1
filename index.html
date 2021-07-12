@@ -26,9 +26,9 @@
       <nav>
 
         <ul>
-          <li><a href="#1">Sobre a Kenzie</a></li>
-          <li><a href="#2">Agenda</a></li>
-          <li><a href="#3">Contato</a></li>
+          <li><a class="topo__nav--button" href="#1">Sobre a Kenzie</a></li>
+          <li><a class="topo__nav--button" href="#2">Agenda</a></li>
+          <li><a class="topo__nav--button" href="#3">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -229,14 +229,17 @@
 
     <div class="secaoContato__div">
 
-      <h2>Contact</h2>
+      <h2 id="secaoContato__h2">Contact</h2>
 
       <!-- SEÇAO CONTATO R -->
 
       <!-- COLUNA LADO ESQUERDO -->
+
+      <div class="secaoContato__pai">
+
       <div class="secaoContato__col">
         
-        <div class="secaoContato-informacoes">
+        <div class="secaoContato__info">
         
           <p>Contact us and we'll get back to you within 24 hours.</p>
           
@@ -262,10 +265,10 @@
       </div>
 
       <!-- COLUNA LADO DIRETO -->
-      <div class="secaoContato__col">
+      <div class="secaoContato__form">
         
         
-        <form action="">
+        <form class="secaoContato__form" action="">
 
           <div class="form-input-model">
             <label for="nome">Nome</label>
@@ -277,8 +280,10 @@
             <input type="text" placeholder="E-mail" id="email" name="email">
           </div>
 
-          <div class="form-input-model">
-            <label for="mensagem">E-mail</label>
+          <div class="form-input-model2">
+
+          <div class="form-input-model__comment">
+            <label for="mensagem">Comment</label>
             <textarea name="mensagem" placeholder="Comment" id="mensagem"></textarea>
           </div>
 
@@ -286,10 +291,14 @@
           
           <input type="submit" value="Send" class="button--hover__branco">
 
+        </div>
+
 
         </form>
 
       </div>
+
+    </div>
 
     </div>
 
